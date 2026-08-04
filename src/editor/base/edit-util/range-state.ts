@@ -101,10 +101,13 @@ export const rangeParser: StateField<ParserData> = StateField.define({
                 node.item.key.low = node.item.value.from;
                 node.item.key.high = node.item.value.to;
                 visitNode(node.right);
-                if (node.left != nil_node)
-                    node.max.low = node.left.max.low;
-                if (node.right != nil_node)
-                    node.max.high = node.right.max.high;
+                // EXPL: `max` is the interval the tree uses to prune subtrees during search, so
+                //       it must span this node's own key as well as both children's max.
+                //       Deriving it from the children alone left it too small — and for a leaf
+                //       (both children nil) it was not updated at all, keeping a pre-shift
+                //       value — so search pruned subtrees that did contain the queried
+                //       position and ranges present in `ranges` became unresolvable.
+                node.update_max();
             }
         }
         visitNode(value.ranges.tree.root!);
