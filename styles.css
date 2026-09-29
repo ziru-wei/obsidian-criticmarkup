@@ -1,0 +1,629 @@
+@charset "UTF-8";.svelcomlib-spinner{width:var(--size-4-4);height:var(--size-4-4);border:3px solid;border-color:initial;border-bottom-color:transparent;border-radius:50%;display:inline-block;box-sizing:border-box;animation:svelcomlib-spinner-animation 1.5s linear infinite}@keyframes svelcomlib-spinner-animation{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.svelcomlib-skeleton-placeholder{background-color:var(--color-base-30)}.svelcomlib-skeleton-placeholder:after{content:"";display:block;width:100%;height:100%;animation:svelcomlib-skeleton-animation 1.5s ease-in-out infinite;background:linear-gradient(90deg,rgba(255,255,255,0),var(--color-base-25),rgba(255,255,255,0));background-size:200px 100%;background-repeat:no-repeat;border-radius:4px}.svelcomlib-icon-text{display:flex;align-items:center;gap:4px}.svelcomlib-icon-text>*{display:flex}.svelcomlib-toggle{justify-content:space-between}.svelcomlib-extra>*{color:var(--text-on-accent)}button.svelcomlib-extra{background-color:var(--text-accent);color:var(--text-on-accent)}.svelcomlib-input-extra{color:var(--color-green);border-color:var(--color-green);border-width:3px}.svelcomlib-success>*{color:var(--text-on-accent)}button.svelcomlib-success{background-color:var(--color-green);color:var(--text-on-accent)}.svelcomlib-input-success{color:var(--color-green);border-color:var(--color-green);border-width:3px}.svelcomlib-fail>*{color:var(--text-on-accent)}button.svelcomlib-fail{background-color:var(--background-modifier-error);color:var(--text-on-accent)}.svelcomlib-input-fail{color:var(--text-error);border-color:var(--background-modifier-error);border-width:3px}.svelcomlib-input-icon{display:flex;position:absolute;background-color:var(--background-modifier-error)}.svelcomlib-virtual-list-viewport{position:relative;overflow-y:scroll;-webkit-overflow-scrolling:touch;display:block}.svelcomlib-virtual-list-contents,.svelcomlib-virtual-list-row{display:block}.svelcomlib-virtual-list-row{overflow:hidden}.svelcomlib-notice>code{background-color:var(--code-background);color:var(--code-normal)}.svelcomlib-notice-info{color:var(--text-accent)}.svelcomlib-notice-info:before{content:"\24d8  "}.svelcomlib-notice-warning{color:var(--text-error)}.svelcomlib-notice-warning:before{content:"\26a0  "}.svelcomlib-notice-error{color:var(--text-error);font-weight:700}.svelcomlib-notice-error:before{content:"\26d4  "}.svelcomlib-subsetting{margin-left:var(--size-4-8);border-color:var(--background-modifier-active-hover)}.svelcomlib-subsubsetting{margin-left:var(--size-4-16);border-color:var(--background-modifier-active-hover)}.svelcomlib-setting-subheading.svelcomlib-setting-subheading{font-size:var(--h3-font);margin-top:0;padding:.5em}.svelcomlib-setting-subsubheading.svelcomlib-setting-subsubheading{font-size:var(--h4-font);margin-top:0;padding:.25em;text-transform:uppercase}.cmtr-view-container{padding:0 0 0 var(--size-4-4);height:95%}.cmtr-view-range{border:1px solid var(--background-modifier-border);border-radius:var(--radius-l);background:var(--background-primary);margin:2px 8px 8px 2px;max-height:400px;overflow-y:scroll;word-wrap:break-word}.cmtr-view-range-top{display:flex;align-items:center;gap:var(--size-4-2);padding:var(--size-4-2);position:sticky;z-index:1;top:0;background-color:inherit}.cmtr-view-range-text{padding:0 var(--size-4-1);padding-left:30px}.cmtr-view-range-completed{background:var(--background-primary-alt);color:var(--text-muted);border-style:dashed}.cmtr-view-range:hover{box-shadow:unset;outline:2px dashed var(--interactive-accent-hover)}.cmtr-view-range-selected{box-shadow:0 0 0 2px var(--interactive-accent)}.cmtr-view-range-title{font-variant:all-small-caps;font-weight:var(--bold-weight)}.cmtr-view-range-empty{color:var(--text-faint)}.cmtr-view-range-reply{border-top:1px dashed var(--background-modifier-border)}.cmtr-view-range-reply-top{padding:0 var(--size-4-1) 0 30px}.cmtr-view-range-reply-text{padding:0 var(--size-4-1);padding-left:30px;min-height:2em}.cmtr-view-suggestion-buttons{position:fixed;right:0;transform:translateY(calc(-1 * (var(--scroll-offset) + 12px))) translate(-16px);z-index:2;display:flex;align-items:center;border:1px solid var(--background-modifier-border-hover);background-color:var(--background-secondary);border-radius:var(--radius-s)}.cmtr-view-suggestion-buttons>button{background:unset;box-shadow:unset;border-radius:unset;height:unset;padding:var(--size-4-1)}.cmtr-view-suggestion-buttons>button:hover{background-color:var(--background-secondary-alt)}.cmtr-view-info{color:var(--text-muted);font-size:var(--font-smallest)}.cmtr-view-action-container{display:flex;align-items:center}.cmtr-view-action{height:min-content}.cmtr-view-action-sep{height:24px;border-left:1px solid var(--background-modifier-border-hover)}.cmtr-view-suggestion-button-sep{height:26px;border-left:1px solid var(--background-modifier-border-hover);margin:0 var(--size-4-1)}.cmtr-view-search.search-input-container input{padding-inline-end:8px}.cmtr-settings-navigation-bar{display:flex;flex-direction:row;overflow-x:auto;overflow-y:hidden;flex-wrap:wrap;gap:12px;margin-bottom:var(--size-4-8);background-color:var(--background-primary-alt);padding:var(--size-4-3);border-radius:var(--radius-l)}.cmtr-settings-navigation-item{cursor:pointer;border-radius:100px;font-weight:700;display:flex;flex-direction:row;white-space:nowrap;padding:6px;align-items:center;gap:4px;outline:0 solid transparent;overflow:hidden;background-color:var(--background-primary);border:1px solid var(--background-modifier-border-hover);transition:color .25s ease-in-out,padding .25s ease-in-out,background-color .35s cubic-bezier(.45,.25,.83,.67),max-width .35s cubic-bezier(.57,.04,.58,1),outline .15s ease-in-out;max-width:32px;height:fit-content}.cmtr-settings-selected-element{color:var(--color-accent);transition:color .5s ease-in-out}.cmtr-settings-navigation-item:hover{background-color:var(--background-primary);outline:3px solid var(--text-accent)}.cmtr-settings-navigation-selected-item{outline:unset!important;background-color:var(--text-accent);color:var(--text-on-accent);padding:6px 9px;max-width:200px;transition:color .25s ease-in-out,padding .25s ease-in-out,background-color .35s cubic-bezier(.45,.25,.83,.67),max-width .45s cubic-bezier(.57,.04,.58,1) .2s}.cmtr-settings-navigation-selected-item:hover{background-color:var(--text-accent-hover)}.cmtr-settings-navigation-item-text{height:18px}.cmtr-settings-navigation-selected-item-text{color:transparent;overflow:clip;flex:0;transition:flex .4s ease-in}.cmtr-settings-navigation-selected-item .cmtr-settings-navigation-item-text{flex:1}.cmtr-important-buttons{position:absolute;display:flex;right:var(--size-4-6);bottom:var(--size-4-2);gap:var(--size-4-2)}:root{--cmtr-comment-tooltip-width: 250px}.cmtr-rejected{display:none}.cmtr-addition{color:var(--addition-color)}.cmtr-addition .cmtr-focused{text-decoration:underline 3px solid var(--addition-color)}.cmtr-has-reply .cmtr-addition,.cmtr-has-reply.cmtr-addition{color:var(--text-on-accent)!important;background-color:var(--addition-color);box-shadow:0 0 0 2px var(--addition-color);transition:background-color .2s ease-in-out 0ms,box-shadow .2s ease-in-out 0ms}.cmtr-has-reply .cmtr-addition .cmtr-focused,.cmtr-has-reply.cmtr-addition .cmtr-focused{text-decoration:unset;background-color:var(--addition-color-alt)}.cmtr-has-reply .cmtr-addition:hover,.cmtr-has-reply.cmtr-addition:hover{box-shadow:0 0 0 2px var(--addition-color-alt);background-color:var(--addition-color-alt)}.cmtr-deletion{text-decoration:var(--deletion-color) 2px line-through}.cmtr-deletion:has(.cmtr-focused){text-decoration:var(--deletion-color) 2px line-through dashed}.cmtr-has-reply .cmtr-deletion,.cmtr-has-reply.cmtr-deletion{color:var(--text-on-accent);background-color:var(--deletion-color);box-shadow:0 0 0 2px var(--deletion-color);transition:background-color .2s ease-in-out 0ms;text-decoration:unset}.cmtr-has-reply .cmtr-deletion .cmtr-focused,.cmtr-has-reply.cmtr-deletion .cmtr-focused{background-color:var(--deletion-color-alt)}.cmtr-has-reply .cmtr-deletion:hover,.cmtr-has-reply.cmtr-deletion:hover{box-shadow:0 0 0 2px var(--deletion-color-alt);background-color:var(--deletion-color-alt)}.cmtr-has-reply .cmtr-substitution,.cmtr-has-reply.cmtr-substitution{color:var(--text-on-accent);background-color:var(--substitution-color);box-shadow:0 0 0 2px var(--substitution-color);transition:background-color .2s ease-in-out 0ms}.cmtr-has-reply .cmtr-substitution .cmtr-focused,.cmtr-has-reply.cmtr-substitution .cmtr-focused{background-color:var(--substitution-color-alt)}.cmtr-has-reply .cmtr-substitution:hover,.cmtr-has-reply.cmtr-substitution:hover{box-shadow:0 0 0 2px var(--substitution-color-alt);background-color:var(--substitution-color-alt)}.cmtr-highlight{background-color:var(--highlight-color)}.cmtr-highlight .cmtr-focused{background-color:var(--highlight-color-alt)}.cmtr-comment{background-color:var(--comment-color);border-bottom:2px solid var(--comment-border-color)}.cmtr-comment-icon:hover{cursor:pointer}.cmtr-comment-icon>svg{color:var(--comment-border-color);stroke-width:4px;transition:stroke-width .15s ease-in-out}.cmtr-comment-icon:hover>svg{stroke-width:5px}.cmtr-comment-icon-focused>svg{fill:color-mix(in srgb-linear,var(--comment-border-color),white 30%)}.popover.hover-popover.cmtr-comment-tooltip{cursor:initial;display:flex;flex-direction:column;width:calc(var(--cmtr-comment-tooltip-width));font-size:var(--font-smallest);line-height:var(--line-height-normal)}.cmtr-comment-tooltip .markdown-source-view.mod-cm6{font-size:1em}.cmtr-comment-tooltip-preview>*,.cmtr-comment-tooltip-editor>*{margin-block-start:.25em;margin-block-end:.25em}.cmtr-comment-tooltip-range{padding:.5em}.cmtr-comment-tooltip-reply{border-top:1px dashed var(--background-modifier-border)}.popover.hover-popover.cmtr-comment-tooltip>*{width:unset}.cmtr-suggestion-status{font-size:var(--font-smallest);color:var(--text-faint);margin-right:var(--size-2-1)}.cmtr-submenu-nested{padding-left:var(--size-4-6)}.cmtr-folded-element .cmtr-anno-gutter-annotation{width:0;overflow-y:hidden}span.cm-strikethrough:has([data-type=cmtr-substitution]){text-decoration:unset}span.cm-highlight:has([data-type=cmtr-highlight]){background-color:unset}.cmtr-addition .list-bullet:after{background-color:var(--addition-color)}.cmtr-addition img{border:4px solid var(--addition-color);border-radius:12px}.cmtr-addition hr{border-color:var(--addition-color)}.cmtr-addition .callout{border:4px dashed var(--addition-color)}.cmtr-addition:has(.markdown-embed){border:4px dotted var(--addition-color)}.cmtr-addition:has(.markdown-embed) .markdown-embed{border-left:unset}.cmtr-deletion img{border:4px solid var(--deletion-color)!important;border-radius:12px}.cmtr-daterange-picker-modal{width:auto}.cmtr-daterange-picker{margin-top:var(--size-4-2);display:flex;--sdt-bg-main: var(--background-primary);--sdt-shadow-color: var(--background-modifier-box-shadow);--sdt-color: var(--text-normal);--sdt-clock-color: var(--sdt-color);--sdt-clock-color-hover: var(--sdt-color);--sdt-clock-time-bg: transparent;--sdt-clock-time-bg-hover: var(--background-modifier-hover);--sdt-clock-disabled: var(--background-modifier-disabled);--sdt-clock-disabled-bg: var(--sdt-bg-main);--sdt-header-color: var(--text-muted);--sdt-bg-selected: var(--color-accent);--sdt-clock-selected-bg: var(--sdt-bg-selected);--sdt-table-disabled-date: var(--background-modifier-disabled);--sdt-table-disabled-date-bg: var(--sdt-bg-main);--sdt-table-data-bg-hover: var(--background-modifier-hover);--sdt-table-selected-bg: var(--sdt-bg-selected);--sdt-header-btn-bg-hover: var(--background-modifier-hover);--sdt-color-selected: var(--text-on-accent);--sdt-table-today-indicator: var(--text-faint);--sdt-clock-bg: var(--background-primary-alt);--sdt-today-bg: var(--color-accent);--sdt-today-color: var(--text-on-accent);--sdt-clear-color: var(--background-modifier-error);--sdt-clear-bg: var(--sdt-bg-main);--sdt-clear-hover-color: var(--text-on-accent);--sdt-clear-hover-bg: var(--background-modifier-error)}.cmtr-daterange-picker.cmtr-daterange-picker.cmtr-daterange-picker .sdt-widget+.sdt-widget:before{background-color:var(--background-modifier-border)}.cmtr-daterange-picker button,.cmtr-daterange-picker div.sdt-calendar-wrap.sdt-calendar-wrap.sdt-calendar-wrap{box-shadow:unset}.cmtr-daterange-picker table tr:last-child td{padding-bottom:var(--size-4-1)!important}.markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer{max-width:calc(var(--file-line-width) + var(--cmtr-anno-gutter-width, 0))}.cm-gutters.cm-gutters.cm-gutters.cm-gutters:has(.is-minimal.cmtr-anno-gutter){position:sticky!important}.cm-gutters.cm-gutters:has(>.cmtr-anno-gutter){padding-inline-end:0;margin-inline-end:0}.cmtr-anno-gutter{width:100%;transition:width .4s ease-in-out}.cmtr-anno-gutter-resizing .cmtr-anno-gutter{transition:width 50ms ease-out}.cmtr-anno-gutter-resizing .cmtr-anno-gutter-button{transition:right 50ms ease-out}.cmtr-anno-gutter-thread{width:100%;border:2px solid var(--background-modifier-border);border-radius:var(--radius-l);background-color:var(--background-primary-alt);color:var(--text-muted);transition:border-color .1s ease-in-out 0ms,background-color .1s ease-in-out 0ms}.cmtr-anno-gutter-thread-highlight{border-color:var(--interactive-accent)}.cmtr-anno-gutter-annotation{width:100%;max-height:150px;background-color:inherit;padding:var(--size-2-2);position:relative;overflow-y:scroll;word-wrap:break-word}.cmtr-anno-gutter-annotation:first-child{border-top-left-radius:var(--radius-l);border-top-right-radius:var(--radius-l)}.cmtr-anno-gutter-annotation:last-child{border-bottom-left-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.cmtr-anno-gutter-annotation:not(:last-child){border-bottom:1px dashed var(--background-modifier-border)}.cmtr-anno-gutter .cm-gutterElement{transition:margin .2s ease-in-out}.cmtr-anno-gutter-annotation-desc{font-weight:var(--font-bold)}.cmtr-anno-gutter-annotation-view>*{margin-block-start:.25em;margin-block-end:.25em}.cmtr-anno-gutter-annotation:hover{box-shadow:0 0 0 2px var(--interactive-accent);background-color:var(--background-secondary);z-index:20}.cmtr-anno-gutter-annotation:focus,.cmtr-anno-gutter-annotation-editing.cmtr-anno-gutter-annotation-editing{box-shadow:0 0 0 2px var(--comment-border-color);background-color:var(--background-secondary);z-index:25}.cmtr-anno-gutter-annotation-metadata{font-size:var(--font-smallest);color:var(--text-faint);position:sticky;top:-4px;background-color:inherit;z-index:10;padding:2px 0}.cmtr-anno-gutter-annotation-editor.cm-editor{min-height:auto}.cmtr-anno-gutter-resize-handle{position:absolute;background:transparent;transition:background-color .2s ease-in-out,border-color .2s ease-in-out,opacity .2s ease-in-out;border:unset;margin:0;height:100%;transform:translate(-10px,-40px);border-inline-end-color:var(--divider-color);border-inline-end-width:var(--divider-width);border-inline-end-style:dashed;width:var(--divider-width-hover);cursor:col-resize}.cmtr-anno-gutter-resize-handle:hover,.cmtr-anno-gutter-resize-handle-hover{background:var(--divider-color-hover);border-color:var(--divider-color-hover)}.cmtr-anno-gutter-button{position:fixed;top:calc(var(--file-margins) + 60px);transform:translate(-36px);z-index:1000}.markdown-embed .cmtr-anno-gutter-button{position:absolute;top:0}.cmtr-anno-gutter-button a{position:absolute;color:var(--text-faint);transition:color .2s ease-in-out 0ms,right .4s ease-in-out,rotate .2s ease-in-out}.cmtr-anno-gutter-button a:hover{color:var(--text-normal)}.cm-gutters.cm-gutters:has(+.cm-gutters){margin-right:var(--size-4-2)}.cm-gutters:has(>.cmtr-gutter-show-empty){min-width:18px}.cmtr-diff-gutter-addition{background-color:var(--addition-color);width:6px;height:100%}.cmtr-diff-gutter-deletion{background-color:var(--deletion-color);width:6px;height:100%}.cmtr-diff-gutter-addition.cmtr-diff-gutter-deletion{background:repeating-linear-gradient(45deg,var(--addition-color),var(--addition-color) 10px,var(--deletion-color) 10px,var(--deletion-color) 18px)}.cmtr-diff-gutter-substitution{background:repeating-linear-gradient(45deg,var(--addition-color),var(--addition-color) 10px,var(--deletion-color) 10px,var(--deletion-color) 18px);width:6px;height:100%}.cmtr-diff-gutter-top{border-top:1px solid var(--background-primary);border-top-left-radius:8px;border-top-right-radius:8px}.cmtr-diff-gutter-bottom{border-bottom:1px solid var(--background-primary);border-bottom-left-radius:8px;border-bottom-right-radius:8px}.cm-gutters.cm-gutters.cm-gutters.cm-gutters:has(.is-minimal.cmtr-diff-gutter){position:sticky!important;left:20px}.theme-light{--addition-color: var(--color-green);--addition-color-alt: color-mix( in srgb-linear, var(--addition-color), black 15% );--deletion-color: var(--color-red);--deletion-color-alt: color-mix( in srgb-linear, var(--deletion-color), black 15% );--substitution-color: var(--color-orange);--substitution-color-alt: color-mix( in srgb-linear, var(--substitution-color), black 15% );--highlight-color: var(--text-highlight-bg);--highlight-color-alt: color-mix( in srgb-linear, var(--text-highlight-bg), black 15% );--comment-color: #bacff4;--comment-border-color: #679af4;--comment-inverse-color: #445f8f}.theme-dark{--addition-color: var(--color-green);--addition-color-alt: color-mix( in srgb-linear, var(--addition-color), white 10% );--deletion-color: var(--color-red);--deletion-color-alt: color-mix( in srgb-linear, var(--deletion-color), white 10% );--substitution-color: var(--color-orange);--substitution-color-alt: color-mix( in srgb-linear, var(--substitution-color), white 10% );--highlight-color: var(--text-highlight-bg);--highlight-color-alt: color-mix( in srgb-linear, var(--text-highlight-bg), white 10% );--comment-color: #445f8f;--comment-border-color: #679af4;--comment-inverse-color: #bacff4}.cmtr-fail>button{background-color:var(--color-red);color:var(--text-on-accent)}.cm-gutters.gutter-hidden{display:none}.cmtr-debug-comment-line{width:100%;border-bottom:1px dashed red}.cmtr-metadata-info{font-size:var(--font-smallest);color:var(--text-faint);display:flex;gap:.6em;flex-wrap:wrap;flex-direction:row;align-items:center}.cmtr-metadata-info-field{display:flex;flex-wrap:nowrap;align-items:baseline}.cmtr-metadata-info-separator{line-height:.1}.cmtr-metadata-info-icon{display:flex;margin-right:.25em;--icon-size: var(--font-smallest)}
+
+/* =================================================================
+   Commentator 定制样式（原 snippets/plugin_comment.css，已并入插件，复制插件文件夹即可生效）
+   配色由设置里的 “Annotation color scheme” 决定：body.cmtr-scheme-light / -dark
+   ================================================================= */
+body.cmtr-scheme-light {
+  --cmtr-surface: #ffffff;
+  --cmtr-surface-hover: #f0f7f6;
+  --cmtr-text: #222222;
+  --cmtr-text-muted: #666666;
+  --cmtr-text-faint: #999999;
+  --cmtr-border: #cedede;
+  --cmtr-border-soft: #e0e0e0;
+  --cmtr-meta: #939393;
+  --cmtr-popover-secondary: rgba(58, 128, 118, 0.109);
+  --cmtr-code-bg: #f4f4f4;
+  --cmtr-code-text: #dd1144;
+  --cmtr-icon: #00af92;
+  --cmtr-icon-hover: #15ccae;
+  --cmtr-hl: rgba(96, 176, 164, 0.259);
+  --cmtr-hl-alt: rgba(96, 176, 164, 0.42);
+  --cmtr-comment-bg: #ececec;
+  --cmtr-comment-border: #cfcfcf;
+  --cmtr-add: #2f8a4e;
+  --cmtr-del: #c8414f;
+  --cmtr-sub: #a67c00;
+  --cmtr-chip-icon: #4a4a4a;
+}
+body.cmtr-scheme-dark {
+  --cmtr-surface: #2a2a2a;
+  --cmtr-surface-hover: #313a39;
+  --cmtr-text: #dcddde;
+  --cmtr-text-muted: #a8a8a8;
+  --cmtr-text-faint: #7a7a7a;
+  --cmtr-border: #3f4a49;
+  --cmtr-border-soft: #3a3a3a;
+  --cmtr-meta: #8c8c8c;
+  --cmtr-popover-secondary: rgba(96, 176, 164, 0.15);
+  --cmtr-code-bg: #333333;
+  --cmtr-code-text: #ff7b8a;
+  --cmtr-icon: #2cc7aa;
+  --cmtr-icon-hover: #4fe0c3;
+  --cmtr-hl: rgba(96, 176, 164, 0.3);
+  --cmtr-hl-alt: rgba(96, 176, 164, 0.45);
+  --cmtr-comment-bg: #3a3a3a;
+  --cmtr-comment-border: #555555;
+  --cmtr-add: #5cc47a;
+  --cmtr-del: #e8606e;
+  --cmtr-sub: #d6a824;
+  --cmtr-chip-icon: #c8c8c8;
+}
+
+/* =================================================================
+   全局统一样式：无论 Light 还是 Dark，都强制为“白底黑字卡片”
+   ================================================================= */
+
+/* 1. 外层容器 (Thread) = 一张卡片：评论和它的回复都在同一张卡里 */
+.cmtr-anno-gutter-thread {
+  background-color: var(--cmtr-surface) !important;
+  color: var(--cmtr-text) !important;
+  border: 1.6px solid var(--cmtr-border) !important;
+  border-radius: 4px !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
+  overflow: hidden !important;
+}
+.cmtr-anno-gutter-thread.cmtr-anno-gutter-thread-highlight {
+  border-color: color-mix(in srgb, var(--cmtr-icon) 55%, var(--cmtr-border)) !important;
+}
+
+/* 2. 卡片里的每条评论/回复：透明、无边框，回复之间用一条淡线隔开 */
+.cmtr-anno-gutter-annotation,
+.cmtr-anno-gutter-annotation:first-child,
+.cmtr-anno-gutter-annotation:last-child {
+  background-color: transparent !important;
+  color: var(--cmtr-text) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.cmtr-anno-gutter-annotation:has(> .cmtr-anno-gutter-annotation-comment)
+  ~ .cmtr-anno-gutter-annotation:has(> .cmtr-anno-gutter-annotation-comment) {
+  border-top: 1px solid var(--cmtr-border-soft) !important;
+}
+
+/* 3. 鼠标悬停 (Hover) 效果：只给当前这一条淡淡的底色 */
+.cmtr-anno-gutter-annotation:hover {
+  background-color: var(--cmtr-surface-hover) !important;
+}
+
+/* 4. 选中/编辑状态 (Focus) */
+.cmtr-anno-gutter-annotation:focus,
+.cmtr-anno-gutter-annotation-editing.cmtr-anno-gutter-annotation-editing {
+  z-index: 10;
+  box-shadow: none !important;
+  background-color: var(--cmtr-surface-hover) !important;
+}
+
+/* 5. 强制内部所有文字颜色 */
+/* 这一步很关键，防止 Dark Mode 下文字自动变白，或者 Light Mode 下文字变灰 */
+.cmtr-anno-gutter-annotation * {
+  color: var(--cmtr-text) !important;
+  border-color: var(--cmtr-border-soft);
+}
+
+/* 6. 元数据 (作者/时间) 颜色 */
+/* 让它稍微浅一点，与正文区分 */
+.cmtr-anno-gutter-annotation-metadata {
+  color: var(--cmtr-meta) !important;
+  background-color: transparent !important;
+}
+
+/* =================================================================
+   Tooltip/Popover 修复：强制悬浮窗为白底黑字（Light/Dark 通用）
+   ================================================================= */
+
+/* 1. 定义悬浮窗容器的样式 */
+.popover.hover-popover.cmtr-comment-tooltip {
+  /* 强制背景为白色 */
+  background-color: var(--cmtr-surface) !important;
+  
+  /* 强制重置局部变量 (关键步骤) 
+     这会告诉 Obsidian 渲染引擎：“在这个小格子里，现在是亮色模式” */
+  --background-primary: var(--cmtr-surface);
+  --background-secondary: var(--cmtr-popover-secondary);
+  
+  --text-normal: var(--cmtr-text);
+  --text-muted: var(--cmtr-text-muted);
+  --text-faint: var(--cmtr-text-faint);
+  
+  /* 边框和阴影，确保在白色背景上也能看清轮廓 */
+  border: 1.6px solid var(--cmtr-border) !important;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07) !important;
+  
+  /* 圆角与之前的设定保持一致 */
+  border-radius: 4px !important;
+  
+  /* 强制字体颜色 */
+  color: var(--cmtr-text) !important;
+}
+
+/* 2. 强制内部所有元素文字变黑 */
+/* 这一步防止内部的 markdown 渲染器使用全局的白色文字 */
+.popover.hover-popover.cmtr-comment-tooltip * {
+  color: var(--cmtr-text) !important;
+  border-color: var(--cmtr-border-soft);
+}
+
+/* 3. 特别处理代码块或特殊高亮区域（如果有） */
+/* 防止代码块在里面变成深色背景 */
+.popover.hover-popover.cmtr-comment-tooltip code,
+.popover.hover-popover.cmtr-comment-tooltip pre {
+  background-color: var(--cmtr-code-bg) !important;
+  color: var(--cmtr-code-text) !important; /* 典型的红色代码文字 */
+}
+
+/* 4. 修复悬浮窗内的编辑器视图背景（如果有编辑功能） */
+.cmtr-comment-tooltip .markdown-source-view.mod-cm6 {
+  background-color: transparent !important;
+}
+
+/* =================================================================
+   自定义 Comment Icon (使用 Mask 技术以支持自动变色)
+   ================================================================= */
+
+/* 1. 隐藏原插件的 SVG 图标 */
+.cmtr-comment-icon > svg {
+  display: none !important;
+}
+
+.cmtr-comment-icon::before {
+  content: '';
+  display: inline-block;
+  padding-left: 2px;
+  width: 14px;
+  height: 14px;
+
+  background-color: var(--cmtr-icon) !important;
+
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12,2A10,10,0,0,0,2,12a9.89,9.89,0,0,0,2.26,6.33l-2,2a1,1,0,0,0-.21,1.09A1,1,0,0,0,3,22h9A10,10,0,0,0,12,2Zm0,18H5.41l.93-.93a1,1,0,0,0,0-1.41A8,8,0,1,1,12,20Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12,2A10,10,0,0,0,2,12a9.89,9.89,0,0,0,2.26,6.33l-2,2a1,1,0,0,0-.21,1.09A1,1,0,0,0,3,22h9A10,10,0,0,0,12,2Zm0,18H5.41l.93-.93a1,1,0,0,0,0-1.41A8,8,0,1,1,12,20Z'/%3E%3C/svg%3E");
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+
+  transform: translateY(3px);
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+
+/* 3. 鼠标悬停 (Hover) 时的颜色 */
+/* 强制变为主题强调色 (如紫色/蓝色) */
+.cmtr-comment-icon:hover::before {
+  background-color: var(--cmtr-icon-hover) !important;
+  transform: scale(1.1); /* 稍微放大一点 */
+  transition: background-color 0.15s ease, transform 0.1s ease;
+  
+  
+}
+
+/* 4. 选中/编辑状态时的颜色 */
+/* 当你在编辑这条评论时，图标也应该保持高亮 */
+.cmtr-anno-gutter-annotation-editing .cmtr-comment-icon::before {
+  background-color: var(--interactive-accent) !important;
+}
+
+/* =================================================================
+   被评论的文字 {==目标==}{>>评论<<}：沿用原来 %% 注释的青色高亮，
+   替换 Commentator 默认的黄色高亮
+   ================================================================= */
+
+body.theme-light,
+body.theme-dark {
+  --highlight-color: var(--cmtr-hl);
+  --highlight-color-alt: var(--cmtr-hl-alt);
+}
+
+.cmtr-highlight {
+  background-color: var(--highlight-color) !important;
+  color: var(--text-normal) !important;
+  border-radius: 4px;
+  padding: 0 4px;
+  display: inline !important;
+  -webkit-box-decoration-break: clone !important;
+  box-decoration-break: clone !important;
+}
+
+/* {==...==} 里的 == 也会被 Obsidian 解析成原生黄色高亮，去掉外层底色 */
+body .markdown-source-view.mod-cm6 span.cm-highlight:has(.cmtr-highlight),
+body .markdown-source-view.mod-cm6 span.cm-formatting-highlight:has(.cmtr-highlight),
+body .markdown-rendered mark:has(.cmtr-highlight) {
+  background-color: transparent !important;
+}
+
+/* 侧栏只显示评论卡片，不单独显示被高亮的原文（和原来 %% 时一样） */
+.cmtr-anno-gutter-thread:has(.cmtr-anno-gutter-annotation-comment)
+  > .cmtr-anno-gutter-annotation:has(> .cmtr-anno-gutter-annotation-highlight) {
+  display: none !important;
+}
+
+/* 光标进入评论时 {>>...<<} 的底色：浅灰（原来 dark 变量下是看不清的深蓝） */
+body.theme-light,
+body.theme-dark {
+  --comment-color: var(--cmtr-comment-bg);
+  --comment-border-color: var(--cmtr-comment-border);
+}
+.cmtr-comment {
+  color: var(--text-normal) !important;
+}
+
+/* =================================================================
+   Annotation view：只看当前笔记，顶部 Comment / Revise 切换
+   ================================================================= */
+
+/* 原来的一排过滤按钮（全库/文件夹/类型…）不再需要 */
+.cmtr-view .cmtr-view-action-container {
+  display: none !important;
+}
+
+.cmtr-view-segmented {
+  display: flex;
+  width: 100%;
+  padding: 2px;
+  margin-bottom: var(--size-4-2);
+  border-radius: 6px;
+  background-color: var(--background-modifier-hover);
+}
+.cmtr-view-segmented > button {
+  flex: 1;
+  height: 24px;
+  padding: 0 8px;
+  font-size: var(--font-ui-small);
+  color: var(--text-muted);
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cmtr-view-segmented > button.is-active {
+  color: var(--text-normal);
+  background-color: var(--background-primary) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* 卡片顶部的笔记名 + 图标 */
+.cmtr-view-range-top {
+  display: none !important;
+}
+.cmtr-view-range {
+  padding-top: var(--size-4-1);
+}
+.cmtr-view-range-text,
+.cmtr-view-range-reply-text,
+.cmtr-view-range-reply-top {
+  padding-left: var(--size-4-2) !important;
+}
+
+/* 被评论的原文：小字、紧行距、半透明，左侧引用竖线 */
+.cmtr-view-range-type-highlight > .cmtr-view-range-text {
+  margin: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-2);
+  padding-left: var(--size-4-2) !important;
+  border-left: 2px solid var(--background-modifier-border-hover);
+  font-size: var(--font-smallest);
+  line-height: 1.35;
+  opacity: 0.6;
+}
+.cmtr-view-range-type-highlight > .cmtr-view-range-text p {
+  margin-block: 0.15em;
+}
+.cmtr-view-range-type-highlight .cmtr-view-range-reply {
+  border-top: none;
+}
+
+/* =================================================================
+   Revise 视图：颜色区分（删除=红+淡删除线，新增=绿），字号介于原文和评论之间
+   ================================================================= */
+.cmtr-view-range-type-addition > .cmtr-view-range-text,
+.cmtr-view-range-type-deletion > .cmtr-view-range-text,
+.cmtr-view-range-type-substitution > .cmtr-view-range-text {
+  font-size: var(--font-ui-small);
+  line-height: 1.45;
+}
+.cmtr-view-range-type-deletion > .cmtr-view-range-text,
+.cmtr-view-range-type-substitution > .cmtr-view-range-text > div:first-of-type {
+  color: var(--cmtr-del);
+  text-decoration: line-through;
+  text-decoration-color: color-mix(in srgb, var(--cmtr-del) 35%, transparent);
+  text-decoration-thickness: 1px;
+}
+.cmtr-view-range-type-addition > .cmtr-view-range-text,
+.cmtr-view-range-type-substitution > .cmtr-view-range-text > div:last-of-type {
+  color: var(--cmtr-add);
+  text-decoration: none;
+}
+.cmtr-view-range-type-substitution > .cmtr-view-range-text > div + div {
+  margin-top: 2px;
+}
+.cmtr-view-range-text p {
+  margin-block: 0.2em;
+}
+
+/* 卡片 hover：去掉粗虚线框，改成很淡的实线 */
+.cmtr-view-range:hover {
+  outline: none !important;
+  box-shadow: 0 0 0 1px var(--background-modifier-border-hover) !important;
+}
+.cmtr-view-range-selected {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--interactive-accent) 55%, transparent) !important;
+}
+
+/* hover 按钮：只留 ✓ / ✕，放在卡片左下角，小一号 */
+.cmtr-view-range {
+  position: relative;
+  padding-bottom: 22px;
+}
+.cmtr-view-range div[style*="position: relative"]:has(> .cmtr-view-suggestion-buttons) {
+  position: static !important;
+}
+.cmtr-view-suggestion-buttons {
+  position: absolute !important;
+  top: auto !important;
+  right: auto !important;
+  left: 6px;
+  bottom: 3px;
+  transform: none !important;
+  gap: 2px;
+  border: none !important;
+  background: transparent !important;
+}
+.cmtr-view-suggestion-buttons > .cmtr-view-suggestion-button-sep,
+.cmtr-view-suggestion-buttons > button[aria-label="View in note"],
+.cmtr-view-suggestion-buttons > button[aria-label="More options"] {
+  display: none !important;
+}
+.cmtr-view-suggestion-buttons > button {
+  width: 20px;
+  height: 20px !important;
+  padding: 0 !important;
+  justify-content: center;
+  border-radius: 4px !important;
+  color: var(--text-faint);
+}
+.cmtr-view-suggestion-buttons > button svg {
+  width: 13px;
+  height: 13px;
+}
+.cmtr-view-suggestion-buttons > button[aria-label^="Accept"]:hover {
+  color: var(--color-green);
+  background-color: color-mix(in srgb, var(--cmtr-add) 12%, transparent) !important;
+}
+.cmtr-view-suggestion-buttons > button[aria-label^="Reject"]:hover,
+.cmtr-view-suggestion-buttons > button[aria-label^="Delete"]:hover {
+  color: var(--color-red);
+  background-color: color-mix(in srgb, var(--cmtr-del) 12%, transparent) !important;
+}
+
+/* 双击卡片后，原文里对应的评论图标变实心 */
+.cmtr-comment-icon.cmtr-comment-icon-focused::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12,2A10,10,0,0,0,2,12a9.89,9.89,0,0,0,2.26,6.33l-2,2a1,1,0,0,0-.21,1.09A1,1,0,0,0,3,22h9A10,10,0,0,0,12,2Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12,2A10,10,0,0,0,2,12a9.89,9.89,0,0,0,2.26,6.33l-2,2a1,1,0,0,0-.21,1.09A1,1,0,0,0,3,22h9A10,10,0,0,0,12,2Z'/%3E%3C/svg%3E");
+}
+
+
+/* =================================================================
+   修订颜色：主题自带的绿 (#a8c373) 在白底上太浅，统一用深一点的红/绿
+   ================================================================= */
+body.theme-light,
+body.theme-dark {
+  --addition-color: var(--cmtr-add);
+  --deletion-color: var(--cmtr-del);
+}
+
+/* 带评论的增/删原文：透明底色 + 保留红/绿字，不再是实心色块 + 白字 */
+.cmtr-has-reply .cmtr-addition,
+.cmtr-has-reply.cmtr-addition {
+  color: var(--cmtr-add) !important;
+  background-color: color-mix(in srgb, var(--cmtr-add) 13%, transparent) !important;
+  box-shadow: none !important;
+  border-radius: 3px;
+}
+.cmtr-has-reply .cmtr-deletion,
+.cmtr-has-reply.cmtr-deletion {
+  color: var(--cmtr-del) !important;
+  background-color: color-mix(in srgb, var(--cmtr-del) 11%, transparent) !important;
+  box-shadow: none !important;
+  border-radius: 3px;
+  text-decoration: line-through color-mix(in srgb, var(--cmtr-del) 45%, transparent) !important;
+}
+.cmtr-has-reply .cmtr-addition:hover,
+.cmtr-has-reply.cmtr-addition:hover {
+  background-color: color-mix(in srgb, var(--cmtr-add) 20%, transparent) !important;
+}
+.cmtr-has-reply .cmtr-deletion:hover,
+.cmtr-has-reply.cmtr-deletion:hover {
+  background-color: color-mix(in srgb, var(--cmtr-del) 18%, transparent) !important;
+}
+.cmtr-has-reply .cmtr-addition .cmtr-focused,
+.cmtr-has-reply.cmtr-addition .cmtr-focused,
+.cmtr-has-reply .cmtr-deletion .cmtr-focused,
+.cmtr-has-reply.cmtr-deletion .cmtr-focused {
+  background-color: transparent !important;
+}
+.cmtr-has-reply .cmtr-substitution,
+.cmtr-has-reply.cmtr-substitution {
+  box-shadow: none !important;
+}
+
+/* 带评论的增/删：行内气泡用红/绿 */
+.cmtr-comment-icon-on-addition::before { background-color: var(--cmtr-add) !important; }
+.cmtr-comment-icon-on-deletion::before { background-color: var(--cmtr-del) !important; }
+.cmtr-comment-icon-on-substitution::before {
+  background: linear-gradient(135deg, var(--cmtr-del) 50%, var(--cmtr-add) 50%) !important;
+}
+
+/* =================================================================
+   侧栏 (annotation gutter)
+   ================================================================= */
+
+/* 没有评论的增/删：一条和评论卡同宽的红/绿线 + 右端小三角；点击 = 给它加评论 */
+.cmtr-anno-gutter-thread:not(:has(.cmtr-anno-gutter-annotation-comment)):has(.cmtr-anno-gutter-annotation-addition, .cmtr-anno-gutter-annotation-deletion, .cmtr-anno-gutter-annotation-substitution) {
+  --rev: var(--cmtr-add);
+  position: relative;
+  width: 100% !important;
+  height: 12px;
+  margin-top: 4px;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  cursor: pointer;
+}
+.cmtr-anno-gutter-thread:not(:has(.cmtr-anno-gutter-annotation-comment)):has(.cmtr-anno-gutter-annotation-deletion) {
+  --rev: var(--cmtr-del);
+}
+.cmtr-anno-gutter-thread:not(:has(.cmtr-anno-gutter-annotation-comment)):has(.cmtr-anno-gutter-annotation-addition, .cmtr-anno-gutter-annotation-deletion, .cmtr-anno-gutter-annotation-substitution)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 8px;
+  top: 5px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--rev);
+  opacity: 0.55;
+  transition: opacity 0.15s ease, height 0.15s ease, top 0.15s ease;
+}
+.cmtr-anno-gutter-thread:not(:has(.cmtr-anno-gutter-annotation-comment)):has(.cmtr-anno-gutter-annotation-addition, .cmtr-anno-gutter-annotation-deletion, .cmtr-anno-gutter-annotation-substitution)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 9px;
+  height: 12px;
+  background: var(--rev);
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+.cmtr-anno-gutter-thread:not(:has(.cmtr-anno-gutter-annotation-comment)):has(.cmtr-anno-gutter-annotation-substitution)::before {
+  background: linear-gradient(to right, var(--cmtr-del), var(--cmtr-add));
+}
+.cmtr-anno-gutter-thread:not(:has(.cmtr-anno-gutter-annotation-comment)):has(.cmtr-anno-gutter-annotation-substitution)::after {
+  background: linear-gradient(to bottom, var(--cmtr-del) 50%, var(--cmtr-add) 50%);
+}
+.cmtr-anno-gutter-thread:not(:has(.cmtr-anno-gutter-annotation-comment)):has(.cmtr-anno-gutter-annotation-addition, .cmtr-anno-gutter-annotation-deletion, .cmtr-anno-gutter-annotation-substitution):hover::before {
+  opacity: 1;
+  top: 4.5px;
+  height: 3px;
+}
+.cmtr-anno-gutter-thread:not(:has(.cmtr-anno-gutter-annotation-comment)):has(.cmtr-anno-gutter-annotation-addition, .cmtr-anno-gutter-annotation-deletion, .cmtr-anno-gutter-annotation-substitution) > .cmtr-anno-gutter-annotation {
+  display: none !important;
+}
+
+/* 有评论的增/删：隐藏 "Added:/Deleted:" 卡，评论卡用红/绿边 */
+.cmtr-anno-gutter-thread:has(.cmtr-anno-gutter-annotation-comment)
+  > .cmtr-anno-gutter-annotation:has(> .cmtr-anno-gutter-annotation-addition, > .cmtr-anno-gutter-annotation-deletion, > .cmtr-anno-gutter-annotation-substitution) {
+  display: none !important;
+}
+.cmtr-anno-gutter-thread.cmtr-anno-gutter-thread:has(.cmtr-anno-gutter-annotation-addition):has(.cmtr-anno-gutter-annotation-comment) {
+  border-color: color-mix(in srgb, var(--cmtr-add) 55%, transparent) !important;
+  background-color: color-mix(in srgb, var(--cmtr-add) 5%, var(--cmtr-surface)) !important;
+}
+.cmtr-anno-gutter-thread.cmtr-anno-gutter-thread:has(.cmtr-anno-gutter-annotation-deletion):has(.cmtr-anno-gutter-annotation-comment) {
+  border-color: color-mix(in srgb, var(--cmtr-del) 50%, transparent) !important;
+  background-color: color-mix(in srgb, var(--cmtr-del) 4%, var(--cmtr-surface)) !important;
+}
+
+/* 红/绿气泡 hover 时保持红/绿（原来的青色 hover 规则会盖掉它） */
+.cmtr-comment-icon.cmtr-comment-icon-on-addition:hover::before { background-color: color-mix(in srgb, var(--cmtr-add) 80%, black) !important; }
+.cmtr-comment-icon.cmtr-comment-icon-on-deletion:hover::before { background-color: color-mix(in srgb, var(--cmtr-del) 80%, black) !important; }
+
+/* 对应的弹窗边框也用红/绿 */
+.popover.hover-popover.cmtr-comment-tooltip.cmtr-comment-tooltip-on-addition {
+  border-color: color-mix(in srgb, var(--cmtr-add) 55%, transparent) !important;
+}
+.popover.hover-popover.cmtr-comment-tooltip.cmtr-comment-tooltip-on-deletion {
+  border-color: color-mix(in srgb, var(--cmtr-del) 50%, transparent) !important;
+}
+
+/* 在侧栏点中一条评论（或点行内图标）时，正文里对应的图标变实心 */
+.cmtr-comment-icon.cmtr-comment-icon-gutter-focused::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12,2A10,10,0,0,0,2,12a9.89,9.89,0,0,0,2.26,6.33l-2,2a1,1,0,0,0-.21,1.09A1,1,0,0,0,3,22h9A10,10,0,0,0,12,2Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12,2A10,10,0,0,0,2,12a9.89,9.89,0,0,0,2.26,6.33l-2,2a1,1,0,0,0-.21,1.09A1,1,0,0,0,3,22h9A10,10,0,0,0,12,2Z'/%3E%3C/svg%3E");
+}
+
+/* =================================================================
+   替换 (substitution)：气泡 / 侧栏标记 / 卡片边框用 #a67c00（正文文字颜色不变）
+   ================================================================= */
+.cmtr-comment-icon.cmtr-comment-icon-on-substitution::before {
+  background: var(--cmtr-sub) !important;
+}
+.cmtr-comment-icon.cmtr-comment-icon-on-substitution:hover::before {
+  background: color-mix(in srgb, var(--cmtr-sub) 80%, black) !important;
+}
+.popover.hover-popover.cmtr-comment-tooltip.cmtr-comment-tooltip-on-substitution {
+  border-color: color-mix(in srgb, var(--cmtr-sub) 55%, transparent) !important;
+}
+.cmtr-anno-gutter-thread:not(:has(.cmtr-anno-gutter-annotation-comment)):has(.cmtr-anno-gutter-annotation-substitution) {
+  --rev: var(--cmtr-sub);
+}
+.cmtr-anno-gutter-thread:not(:has(.cmtr-anno-gutter-annotation-comment)):has(.cmtr-anno-gutter-annotation-substitution)::before,
+.cmtr-anno-gutter-thread:not(:has(.cmtr-anno-gutter-annotation-comment)):has(.cmtr-anno-gutter-annotation-substitution)::after {
+  background: var(--cmtr-sub) !important;
+}
+.cmtr-anno-gutter-thread.cmtr-anno-gutter-thread:has(.cmtr-anno-gutter-annotation-substitution):has(.cmtr-anno-gutter-annotation-comment) {
+  border-color: color-mix(in srgb, var(--cmtr-sub) 55%, transparent) !important;
+  background-color: color-mix(in srgb, var(--cmtr-sub) 5%, var(--cmtr-surface)) !important;
+}
+
+/* =================================================================
+   悬停增/删/替换时浮出的 ✓ / ✕ 小条
+   ================================================================= */
+.cmtr-rev-chip {
+  position: fixed;
+  z-index: var(--layer-popover);
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  padding: 1px 3px;
+  border-radius: 999px;
+  background: var(--cmtr-surface);
+  border: 1px solid var(--cmtr-border-soft);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.cmtr-rev-chip-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px !important;
+  padding: 0 !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--cmtr-chip-icon) !important;
+  cursor: pointer;
+}
+.cmtr-rev-chip-btn svg {
+  width: 11px;
+  height: 11px;
+  stroke-width: 2.5;
+}
+.cmtr-rev-chip-btn.cmtr-rev-chip-accept:hover {
+  color: var(--cmtr-add) !important;
+  background: color-mix(in srgb, var(--cmtr-add) 14%, transparent) !important;
+}
+.cmtr-rev-chip-btn.cmtr-rev-chip-reject:hover {
+  color: var(--cmtr-del) !important;
+  background: color-mix(in srgb, var(--cmtr-del) 14%, transparent) !important;
+}
+
+/* 有些主题（如 Minimal）把所有 .cm-gutters 设成 position:absolute，批注侧栏会被挤到正文左边。
+   插件自带的修正只在加载时检测到 Minimal 才生效（运行中切换主题就失效），这里不依赖检测，直接覆盖。 */
+.cm-gutters.cm-gutters.cm-gutters.cm-gutters:has(> .cmtr-anno-gutter) {
+  position: sticky !important;
+}
+
+/* Minimal 主题：它把 .cm-sizer/.cm-content 撑满整宽、每行各自居中，侧栏就跑到最右边。
+   有批注侧栏时，把 sizer 收成「正文宽 + 侧栏宽 + 间距」并整体居中，侧栏就贴着段落右侧。 */
+body.cmtr-theme-minimal .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer:has(.cmtr-anno-gutter) {
+  width: 100% !important;
+  max-width: calc(var(--line-width) + var(--cmtr-anno-gutter-width, 0px) + 24px) !important;
+  margin-inline: auto !important;
+}
+body.cmtr-theme-minimal .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer:has(.cmtr-anno-gutter) .cm-content {
+  --max-width: 100%;
+}

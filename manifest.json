@@ -1,0 +1,10 @@
+{
+  "id": "simple-commentor",
+  "name": "Simple Commentor",
+  "version": "0.2.7-ziru.1",
+  "minAppVersion": "1.7.5",
+  "description": "Suggest edits, add comments, and annotate your notes using CriticMarkup syntax. (Fork with comment-focused UI tweaks.)",
+  "author": "kometenstaub and Fevol (fork: ziru-wei)",
+  "authorUrl": "https://github.com/ziru-wei/obsidian-criticmarkup",
+  "isDesktopOnly": false
+}
