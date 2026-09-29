@@ -57,6 +57,9 @@ body.cmtr-scheme-dark {
 
 /* 1. 外层容器 (Thread) = 一张卡片：评论和它的回复都在同一张卡里 */
 .cmtr-anno-gutter-thread {
+  /* 卡片的强调色：普通评论 = 青色；带评论的增/删/替换 = 红/绿/金（hover、选中都跟着它） */
+  --cmtr-thread-accent: var(--cmtr-icon);
+  --cmtr-thread-hover: var(--cmtr-surface-hover);
   background-color: var(--cmtr-surface) !important;
   color: var(--cmtr-text) !important;
   border: 1.6px solid var(--cmtr-border) !important;
@@ -64,8 +67,21 @@ body.cmtr-scheme-dark {
   box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
   overflow: hidden !important;
 }
-.cmtr-anno-gutter-thread.cmtr-anno-gutter-thread-highlight {
-  border-color: color-mix(in srgb, var(--cmtr-icon) 55%, var(--cmtr-border)) !important;
+.cmtr-anno-gutter-thread:has(.cmtr-anno-gutter-annotation-addition) {
+  --cmtr-thread-accent: var(--cmtr-add);
+  --cmtr-thread-hover: color-mix(in srgb, var(--cmtr-add) 9%, var(--cmtr-surface));
+}
+.cmtr-anno-gutter-thread:has(.cmtr-anno-gutter-annotation-deletion) {
+  --cmtr-thread-accent: var(--cmtr-del);
+  --cmtr-thread-hover: color-mix(in srgb, var(--cmtr-del) 8%, var(--cmtr-surface));
+}
+.cmtr-anno-gutter-thread:has(.cmtr-anno-gutter-annotation-substitution) {
+  --cmtr-thread-accent: var(--cmtr-sub);
+  --cmtr-thread-hover: color-mix(in srgb, var(--cmtr-sub) 9%, var(--cmtr-surface));
+}
+/* 选中（点中）的卡片：边框用卡片自己的强调色；选择器写长一点，压过下面带评论修订的着色边框 */
+.cmtr-anno-gutter-thread.cmtr-anno-gutter-thread.cmtr-anno-gutter-thread-highlight:has(.cmtr-anno-gutter-annotation):has(.cmtr-anno-gutter-annotation-view) {
+  border-color: color-mix(in srgb, var(--cmtr-thread-accent) 60%, var(--cmtr-border)) !important;
 }
 
 /* 2. 卡片里的每条评论/回复：透明、无边框，回复之间用一条淡线隔开 */
@@ -85,7 +101,7 @@ body.cmtr-scheme-dark {
 
 /* 3. 鼠标悬停 (Hover) 效果：只给当前这一条淡淡的底色 */
 .cmtr-anno-gutter-annotation:hover {
-  background-color: var(--cmtr-surface-hover) !important;
+  background-color: var(--cmtr-thread-hover) !important;
 }
 
 /* 4. 选中/编辑状态 (Focus) */
@@ -93,7 +109,7 @@ body.cmtr-scheme-dark {
 .cmtr-anno-gutter-annotation-editing.cmtr-anno-gutter-annotation-editing {
   z-index: 10;
   box-shadow: none !important;
-  background-color: var(--cmtr-surface-hover) !important;
+  background-color: var(--cmtr-thread-hover) !important;
 }
 
 /* 5. 强制内部所有文字颜色 */
